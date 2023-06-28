@@ -13,5 +13,14 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
-          name: Cesar Richard
+          name: CesarRichard_CV
           path: crichard.pdf
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: crichard.pdf
+          asset_name: CesarRichard_CV.pdf
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: "=)"
