@@ -41,7 +41,7 @@
 \RequirePackage{etoolbox}
 \RequirePackage[a-1b]{pdfx}
 \RequirePackage{accsupp}
-\RequirePackage[margin=2cm]{geometry}
+\RequirePackage[margin=1cm]{geometry}
 \RequirePackage[fixed]{fontawesome5}
 \RequirePackage{ifxetex,ifluatex}
 \RequirePackage{scrlfile}
